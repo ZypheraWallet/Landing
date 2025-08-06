@@ -17,10 +17,10 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full max-w-7xl">
           {/* Left Column */}
           <div className="space-y-4">
-            <div className="py-1 px-3 bg-card/50 border rounded-full w-max">
+            <div className="py-1 px-4 bg-card/50 border rounded-full max-w-max">
               <p className="font-light text-muted-foreground">Эта страница - тестовая, для отображения этапов разработки 🔧</p>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mt-8">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight mt-8">
               <HighlightText text="Zyphera" /><span className=""> — кошелёк нового поколения</span>
             </h1>
             <p className="text-muted-foreground text-lg max-w-xl">
@@ -41,7 +41,7 @@ export default function Home() {
           </div>
 
           {/* Right Column */}
-          <div className="flex justify-center">
+          <div className="flex justify-center max-lg:hidden">
                 <Image src={'/testcard.png'} width={'512'} height={'512'} alt='card' className="hover:scale-98 duration-500"/>
           </div>
         </div>

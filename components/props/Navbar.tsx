@@ -27,7 +27,7 @@ const NavBar = () => {
             <nav className={`mx-auto flex justify-between items-center duration-1500 h-16 ${scrolled? 'w-200 bg-card/30 lg:rounded-xl backdrop-blur px-2': 'w-full px-4'}`}>
                 <div>
                     <Link href={"/"}>
-                        <Image src={'/logo.png'} width={'256'} height={'256'} alt='logo' className='w-16 h-16 mt-1'/>
+                        <Image src={'/logo.png'} width={'256'} height={'256'} alt='logo' className={`w-16 h-16 mt-1`}/>
                     </Link>
                 </div>
                 <div className='flex gap-2 items-center'>

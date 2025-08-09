@@ -10,7 +10,6 @@ type Star = {
     duration: number;
     opacity: number;
 };
-
 type Props = {
     count?: number;
     className?: string;

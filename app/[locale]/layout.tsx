@@ -16,7 +16,7 @@ export default async function LocaleLayout({
  
   return (
     <html lang={locale} className='dark'>
-      <body>
+      <body className='max-lg:px-4'>
         <NextIntlClientProvider>
           {children}
         </NextIntlClientProvider>

@@ -67,7 +67,7 @@ const items = [
 
 export default function Component() {
   return (
-    <Timeline defaultValue={3}>
+    <Timeline defaultValue={4}>
       {items.map((item) => (
         <TimelineItem
           key={item.id}

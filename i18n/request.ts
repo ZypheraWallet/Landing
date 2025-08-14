@@ -1,15 +1,33 @@
+
 import { getRequestConfig } from 'next-intl/server';
-import { hasLocale } from 'next-intl';
 import { routing } from './routing';
- 
-export default getRequestConfig(async ({requestLocale}) => {
-  const requested = await requestLocale;
-  const locale = hasLocale(routing.locales, requested)
-    ? requested
-    : routing.defaultLocale;
- 
-  return {
-    locale,
-    messages: (await import(`./messages/${locale}.json`)).default
-  };
+
+function deepMerge(target: any, source: any) {
+    for (const key of Object.keys(source)) {
+        if (
+            source[key] &&
+            typeof source[key] === 'object' &&
+            !Array.isArray(source[key])
+        ) {
+            target[key] = deepMerge(target[key] ?? {}, source[key]);
+        } else {
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+
+export default getRequestConfig(async ({ requestLocale }) => {
+    const requested = await requestLocale;
+    const locale = requested ?? routing.defaultLocale;
+
+    const en = (await import('../localization/en.json')).default;
+    const localeMessages = (await import(`../localization/${locale}.json`)).default;
+
+    const messages = deepMerge(JSON.parse(JSON.stringify(en)), localeMessages);
+
+    return {
+        locale,
+        messages
+    };
 });

@@ -19,7 +19,7 @@ type Props = {
 };
 
 export default function StarsBackground({
-    count = 60,
+    count = 120,
     className = '',
     minSize = 1,
     maxSize = 3,
@@ -49,7 +49,7 @@ export default function StarsBackground({
     return (
         <div
             aria-hidden
-            className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}
+            className={`absolute min-h-[300vh] inset-0 overflow-hidden pointer-events-none ${className}`}
             style={{
             }}
         >

@@ -1,0 +1,55 @@
+{
+    "Config": {
+        "symbol": "🇺🇸",
+        "label": "English"
+    },
+    "Default": {
+        "buttons": {
+            "cancel": "Cancel"
+        }
+    },
+    "Modal": {
+        "Language": {
+            "title": "Select a language",
+            "subtitle": "The interface will be displayed in the selected language."
+        },
+        "Openwallet": {
+            "title": "Download & Open",
+            "subtitle": "Carefully check the links you open!",
+            "downloadMobile": "Download the app to your phone",
+            "or": "or",
+            "openWeb": "Open in browser"
+        }
+    },
+    "HomePage": {
+        "Herosection": {
+            "title": "Web3 is simple",
+            "title2": "— even grandma will get it with Zyphera!",
+            "subtitle": "Zyphera is a simple and reliable crypto wallet that makes managing digital assets easy and understandable for everyone.",
+            "buttons": {
+                "wallet": "Open Wallet",
+                "details": "Learn More"
+            }
+        },
+        "Featuresection": {
+            "cards": {
+                "0": {
+                    "title": "High Security",
+                    "subtitle": "Hybrid architecture: custodial and non-custodial modes in one wallet"
+                },
+                "1": {
+                    "title": "Instant Transfers",
+                    "subtitle": "Send cryptocurrency by tag, QR code, or via Telegram commands"
+                },
+                "2": {
+                    "title": "Social Integration",
+                    "subtitle": "Profiles with NFT customization and fee-free transfers within the network"
+                },
+                "3": {
+                    "title": "Convenient Payments",
+                    "subtitle": "Support for NFC, Bluetooth, and P2P payments in stores"
+                }
+            }
+        }
+    }
+}

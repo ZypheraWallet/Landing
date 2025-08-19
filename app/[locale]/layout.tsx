@@ -21,7 +21,7 @@ export default async function LocaleLayout({
     if (!hasLocale(routing.locales, locale)) notFound();
 
     return (
-        <html lang={locale} className={`${GeistSans.variable} ${GeistMono.variable} dar`}>
+        <html lang={locale} className={`${GeistSans.variable} ${GeistMono.variable} dark`}>
             <body className='bg-gradient-to-t from-background to-white dark:to-black overflow-x-hidden'>
                 <NextIntlClientProvider>
                     <Navbar />

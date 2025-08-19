@@ -30,26 +30,6 @@
                 "wallet": "Open Wallet",
                 "details": "Learn More"
             }
-        },
-        "Featuresection": {
-            "cards": {
-                "0": {
-                    "title": "High Security",
-                    "subtitle": "Hybrid architecture: custodial and non-custodial modes in one wallet"
-                },
-                "1": {
-                    "title": "Instant Transfers",
-                    "subtitle": "Send cryptocurrency by tag, QR code, or via Telegram commands"
-                },
-                "2": {
-                    "title": "Social Integration",
-                    "subtitle": "Profiles with NFT customization and fee-free transfers within the network"
-                },
-                "3": {
-                    "title": "Convenient Payments",
-                    "subtitle": "Support for NFC, Bluetooth, and P2P payments in stores"
-                }
-            }
         }
     }
 }

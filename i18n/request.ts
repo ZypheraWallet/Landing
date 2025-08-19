@@ -21,10 +21,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
     const requested = await requestLocale;
     const locale = requested ?? routing.defaultLocale;
 
-    const en = (await import('../localization/en.json')).default;
+    const ru = (await import('../localization/ru.json')).default;
     const localeMessages = (await import(`../localization/${locale}.json`)).default;
 
-    const messages = deepMerge(JSON.parse(JSON.stringify(en)), localeMessages);
+    const messages = deepMerge(JSON.parse(JSON.stringify(ru)), localeMessages);
 
     return {
         locale,

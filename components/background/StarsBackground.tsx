@@ -49,7 +49,7 @@ export default function StarsBackground({
     return (
         <div
             aria-hidden
-            className={`absolute min-h-[300vh] inset-0 overflow-hidden pointer-events-none ${className}`}
+            className={`absolute overflow-hidden inset-0 pointer-events-none ${className}`}
             style={{
             }}
         >

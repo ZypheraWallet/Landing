@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from '@/components/ui/button';
 import { useOpenWalletModal } from '@/store/modalStore';
 
-export default function LanguageModal() {
+export default function WalletModal() {
     const t = useTranslations('Modal.Openwallet');
     const d = useTranslations('Default');
 

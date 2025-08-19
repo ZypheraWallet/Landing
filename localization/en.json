@@ -18,11 +18,12 @@
             "subtitle": "Carefully check the links you open!",
             "downloadMobile": "Download the app to your phone",
             "or": "or",
-            "openWeb": "Open in browser"
+            "openWeb": "Open Zyphera"
         }
     },
     "HomePage": {
         "Herosection": {
+            "tg": "Go to Telegram: @ZypheraWallet",
             "title": "Web3 is simple",
             "title2": "— even grandma will get it with Zyphera!",
             "subtitle": "Zyphera is a simple and reliable crypto wallet that makes managing digital assets easy and understandable for everyone.",

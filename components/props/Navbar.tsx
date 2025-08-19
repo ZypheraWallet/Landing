@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { useLanguageModal } from '@/store/modalStore';
+import { useOpenWalletModal } from '@/store/modalStore';
 
 import { Wallet } from 'lucide-react';
 
@@ -14,6 +15,7 @@ const Navbar = () => {
     const t = useTranslations('HomePage.Herosection');
 
     const { open } = useLanguageModal();
+    const openWallet = useOpenWalletModal((state) => state.open)
 
     const [scrolled, setScrolled] = useState(false);
 
@@ -43,7 +45,7 @@ const Navbar = () => {
                     </div>
                     <div className='flex gap-4 items-center'>
                         <Button variant={'ghost'} size={'icon'} onClick={open}>{tConfig('symbol')}</Button>
-                        <Button size={'lg'}><Wallet />{t('buttons.wallet')}</Button>
+                        <Button size={'lg'} onClick={openWallet}><Wallet />{t('buttons.wallet')}</Button>
                     </div>
                 </nav>
             </header>

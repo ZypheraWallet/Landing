@@ -17,6 +17,10 @@ export default function WalletModal() {
     const handleOpen = () => {
         setOpen(true);
         close();
+        setTimeout(()=> {
+            window.location.href ='https://web-wallet-sepia.vercel.app/'
+        }, 500)
+        
     }
 
     return (
